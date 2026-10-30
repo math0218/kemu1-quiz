@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f6f8">
+  <title>科目一 · 精简 500 题</title>
+  <meta name="description" content="科目一精简题库练习，497 道题，答完即出解析与记忆口诀，错题自动收集。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="科目一 · 精简 500 题">
+  <meta property="og:description" content="497 道精选真题，选完即出解析与记忆口诀，错题自动收集。">
+  <meta property="og:image" content="https://math0218.github.io/kemu1-quiz/share-cover.jpg">
+  <meta property="og:url" content="https://math0218.github.io/kemu1-quiz/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="返回首页">
+        <span class="brand-mark">科一</span>
+        <span class="brand-text">精简 500 题<small>科目一刷题</small></span>
+      </a>
+      <nav class="nav">
+        <a href="#/" class="nav-link" data-nav="home">练习</a>
+        <a href="#/wrong" class="nav-link" data-nav="wrong">
+          错题集
+          <span class="nav-badge" id="navWrongCount" hidden>0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="view" class="view" tabindex="-1"></main>
+
+    <footer class="footer">
+      <span>题库来源：《驾考精简500题电子版》</span>
+      <span class="footer-dot"></span>
+      <span id="footerMeta">共 497 题</span>
+      <span class="footer-dot"></span>
+      <span>记录只保存在本机浏览器</span>
+    </footer>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" aria-live="polite"></div>
+
+  <script src="data/questions.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
